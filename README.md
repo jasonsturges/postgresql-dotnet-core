@@ -7,12 +7,9 @@ This enables developer of ASP.NET Core projects on Mac OS X / macOS or linux tar
 
 ### Installing PostgreSQL on Mac
 
-Use brew to install PostgreSQL:
+Use brew to install PostgreSQL, then launch the service:
 
     $ brew install postgresql
-    
-Launch PostgreSQL service:
-
     $ brew services start postgresql
 
 
@@ -54,3 +51,42 @@ Execute the following comment inside the project directory, **where the csproj f
     $ dotnet ef database update
 
 After running the migration, the database is created and web application is ready to be run.
+
+
+### Verifying database
+
+Launch PostgreSQL interactive terminal:
+
+    $ psql
+
+From the PostgreSQL interface terminal, list databases using the `\l` command:
+
+    username=# \l
+
+                                             List of databases
+         Name     |    Owner     | Encoding |   Collate   |    Ctype    |       Access privileges       
+    --------------+--------------+----------+-------------+-------------+-------------------------------
+     dbname       | jasonsturges | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+     
+
+Connect to the newly created database:
+
+    username=# \connect dbname
+
+
+List tables using the `\dt` command:
+
+    dbname=# \dt
+                       List of relations
+     Schema |         Name          | Type  |    Owner     
+    --------+-----------------------+-------+--------------
+     public | AspNetRoleClaims      | table | username
+     public | AspNetRoles           | table | username
+     public | AspNetUserClaims      | table | username
+     public | AspNetUserLogins      | table | username
+     public | AspNetUserRoles       | table | username
+     public | AspNetUserTokens      | table | username
+     public | AspNetUsers           | table | username
+     public | __EFMigrationsHistory | table | username
+    (8 rows)
+   
