@@ -5,6 +5,9 @@ Convert an ASP.NET Core project to use PostgreSQL with Entity Framework.
 This enables developer of ASP.NET Core projects on Mac OS X / macOS or linux targets.
 
 
+![vscode](http://labs.jasonsturges.com/coreclr/postgresql-dotnet-core.png)
+
+
 ### Installing PostgreSQL on Mac
 
 Use brew to install PostgreSQL, then launch the service:
