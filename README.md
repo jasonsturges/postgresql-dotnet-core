@@ -70,7 +70,7 @@ From the PostgreSQL interface terminal, list databases using the `\l` command:
                                              List of databases
          Name     |    Owner     | Encoding |   Collate   |    Ctype    |       Access privileges       
     --------------+--------------+----------+-------------+-------------+-------------------------------
-     dbname       | jasonsturges | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+     dbname       | username     | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
      
 
 Connect to the newly created database:
