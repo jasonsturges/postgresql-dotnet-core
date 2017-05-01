@@ -32,9 +32,7 @@ Configure connection string in project's appsettings.json, replacing the `userna
 
 ### Install NuGet packages
 
-Install the following NuGet package in the ASP.NET web application project:
-
-    Npgsql.EntityFrameworkCore.PostgreSQL
+Install the `Npgsql.EntityFrameworkCore.PostgreSQL` NuGet package in the ASP.NET web application.
 
 To do this, edit the project's .csproj file and add the following line in the `PackageReference` item group:
 
@@ -54,7 +52,7 @@ Inside Startup.cs `ConfigureServices()` method, replace the `UseSqlServer` optio
 
 ### Run Entity Framework Migrations
 
-Execute the following comment inside the project directory, **where the csproj file is located**:
+Execute the following comment inside the project directory, **where the .csproj file is located**:
 
     $ dotnet ef database update
 
