@@ -16,6 +16,10 @@ Use [brew](https://brew.sh/) to install PostgreSQL, then launch the service:
     $ brew install postgresql
     $ brew services start postgresql
 
+Create your database using the `createdb` command from a terminal:
+
+    $ createdb dbname
+
 
 ### Update appsettings.json
 
