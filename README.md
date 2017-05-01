@@ -65,7 +65,7 @@ After running the migration, the database is created and web application is read
 
 Launch PostgreSQL interactive terminal:
 
-    $ psql
+    $ psql dbname
 
 From the PostgreSQL interface terminal, list databases using the `\l` command:
 
