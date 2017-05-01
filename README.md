@@ -63,26 +63,12 @@ After running the migration, the database is created and web application is read
 
 ### Verifying database
 
-Launch PostgreSQL interactive terminal:
+Launch PostgreSQL interactive terminal and connect to the database
 
     $ psql dbname
 
-From the PostgreSQL interface terminal, list databases using the `\l` command:
 
-    username=# \l
-
-                                             List of databases
-         Name     |    Owner     | Encoding |   Collate   |    Ctype    |       Access privileges       
-    --------------+--------------+----------+-------------+-------------+-------------------------------
-     dbname       | username     | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
-     
-
-Connect to the newly created database:
-
-    username=# \connect dbname
-
-
-List tables using the `\dt` command:
+From the PostgreSQL interface terminal, List tables using the `\dt` command:
 
     dbname=# \dt
                        List of relations
@@ -97,4 +83,3 @@ List tables using the `\dt` command:
      public | AspNetUsers           | table | username
      public | __EFMigrationsHistory | table | username
     (8 rows)
-   
