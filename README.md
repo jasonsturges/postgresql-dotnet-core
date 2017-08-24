@@ -31,7 +31,7 @@ Or, edit the project's .csproj file and add the following line in the `PackageRe
 
 ### Update appsettings.json
 
-Configure connection string in project's appsettings.json, replacing the `username` and `dbname` appropriately:
+Configure connection string in project's appsettings.json, replacing the `username`, `password`, and `dbname` appropriately:
 
     "ConnectionStrings": {
         "DefaultConnection": "User ID=username;Password=password;Server=localhost;Port=5432;Database=dbname;Integrated Security=true;Pooling=true;"
