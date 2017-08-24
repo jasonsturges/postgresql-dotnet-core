@@ -11,7 +11,9 @@ This repository uses ASP.NET Core 2.0 Visual Studio 2017 ASP.NET Core Web Applic
 
 ## Project Setup
 
-Project setup has already been completed in this repository.  Below, instructions are referenced to use PostgreSQL in a ASP.NET Core project.
+Project setup has already been completed in this repository.  
+
+Below, instructions are referenced to use PostgreSQL in a ASP.NET Core project.
 
 
 ### Install NuGet packages
