@@ -88,6 +88,8 @@ Create a user using the `createuser` command from a terminal.  Using the `-P` ar
 Create your database using the `createdb` command from a terminal.
 
     $ createdb dbname
+    
+At this time, run the solution's Entity Framework migrations (see above for instructions).
 
 
 ### Verifying database
