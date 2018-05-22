@@ -22,11 +22,11 @@ Install the `Npgsql.EntityFrameworkCore.PostgreSQL` NuGet package in the ASP.NET
 
 To do this, you can use the `dotnet` command line by executing:
 
-    $ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL --version 2.0.0
+    $ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL --version 2.0.2
 
 Or, edit the project's .csproj file and add the following line in the `PackageReference` item group:
 
-    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.0.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.0.2" />
 
 
 ### Update appsettings.json
