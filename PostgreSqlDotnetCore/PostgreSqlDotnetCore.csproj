@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
     <UserSecretsId>aspnet-PostgreSqlDotnetCore-1FFFB31D-77DC-42C3-AD36-A409189D8336</UserSecretsId>
   </PropertyGroup>
 
