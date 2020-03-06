@@ -68,6 +68,25 @@ Inside Startup.cs `ConfigureServices()` method, replace the `UseSqlServer` optio
 Before the solution can be executed, be sure to run entity framework migrations.
 
 
+### Migration Issues with DbContext
+
+Initial Migrations may fail, due to ASP.NET Core template comes with a prre-generation migration for SQL Server.
+
+When trying to run the migration, you might see errors such as:
+> System.NullReferenceException: Object reference not set to an instance of an object.
+> System.InvalidOperationException: No mapping to a relational type can be found for property 'Microsoft.AspNetCore.Identity.IdentityUser.TwoFactorEnabled' with the CLR type 'bool'.
+
+Delete the entire Migrations folder, and regenerate new inital migrations.
+
+Generate a new migration using Visual Studio Package Manager Console (from menu: Tools -> NuGet Package Manager -> Package Manager Console):
+
+    >> Add-Migration
+
+Or, from the command line via DotNet CLI:
+
+    $ dotnet ef migrations add Initial
+
+
 ### Run Entity Framework Migrations
 
 Execute the migration using either Visual Studio Package Manager Console (from menu: Tools -> NuGet Package Manager -> Package Manager Console):
