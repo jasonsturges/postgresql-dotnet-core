@@ -1,4 +1,4 @@
-# PostgreSQL ASP.NET Core 2.1
+# PostgreSQL ASP.NET Core 3.1
 
 Convert an ASP.NET Core Web Application project to use PostgreSQL with Entity Framework.
 
@@ -6,7 +6,17 @@ This enables development of ASP.NET Core projects using [VS Code](https://code.v
 
 ![vscode](http://labs.jasonsturges.com/coreclr/postgresql-dotnet-core.png)
 
-This project uses .NET Core 2.1 target framework, ASP.NET Core Web Application project scaffold from Visual Studio 2017 (version 15.7.3).
+This project uses .NET Core 3.1 target framework, ASP.NET Core Web Application project scaffold from Visual Studio 2019 (version 16.4.5).
+
+
+## Environment Setup
+
+This project requires PostgreSQL - installation instructions are provided below.
+
+If using Visual Studio Code, you will need to generate ASP.NET Core developer certificates by issuing the following commands from a terminal:
+
+    dotnet dev-certs https --clean
+    dotnet dev-certs https
 
 
 ## Project Setup
@@ -22,11 +32,11 @@ Install the `Npgsql.EntityFrameworkCore.PostgreSQL` NuGet package in the ASP.NET
 
 To do this, you can use the `dotnet` command line by executing:
 
-    $ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL --version 2.1.0
+    $ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL --version 3.1.2
 
 Or, edit the project's .csproj file and add the following line in the `PackageReference` item group:
 
-    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.1.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.1.2" />
 
 
 ### Update appsettings.json
