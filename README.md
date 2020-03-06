@@ -80,7 +80,7 @@ Delete the entire Migrations folder, and regenerate new inital migrations.
 
 Generate a new migration using Visual Studio Package Manager Console (from menu: Tools -> NuGet Package Manager -> Package Manager Console):
 
-    >> Add-Migration
+    PM> Add-Migration
 
 Or, from the command line via DotNet CLI:
 
@@ -91,7 +91,7 @@ Or, from the command line via DotNet CLI:
 
 Execute the migration using either Visual Studio Package Manager Console (from menu: Tools -> NuGet Package Manager -> Package Manager Console):
 
-    >> Update-Database
+    PM> Update-Database
 
 Or, from the command line via DotNet CLI, execute the following command inside the project directory, **where the .csproj file is located**:
 
