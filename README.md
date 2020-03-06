@@ -18,6 +18,10 @@ If using Visual Studio Code, you will need to generate ASP.NET Core developer ce
     dotnet dev-certs https --clean
     dotnet dev-certs https
 
+For command line `database ef` commands, you will need to install Entity Framework Core tools .NET CLI:
+
+    dotnet tool install --global dotnet-ef
+
 
 ## Project Setup
 
