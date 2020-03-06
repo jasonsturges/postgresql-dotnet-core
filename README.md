@@ -70,7 +70,7 @@ Before the solution can be executed, be sure to run entity framework migrations.
 
 ### Migration Issues with DbContext
 
-Initial Migrations may fail, due to ASP.NET Core template comes with a prre-generation migration for SQL Server.
+Initial migrations may fail, due to ASP.NET Core template come with a pre-generation migration for SQL Server.
 
 When trying to run the migration, you might see errors such as:
 > System.NullReferenceException: Object reference not set to an instance of an object.
