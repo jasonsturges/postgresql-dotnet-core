@@ -70,7 +70,11 @@ Before the solution can be executed, be sure to run entity framework migrations.
 
 ### Run Entity Framework Migrations
 
-Execute the following comment inside the project directory, **where the .csproj file is located**:
+Execute the migration using either Visual Studio Package Manager Console (from menu: Tools -> NuGet Package Manager -> Package Manager Console):
+
+    >> Update-Database
+
+Or, from the command line via DotNet CLI, execute the following command inside the project directory, **where the .csproj file is located**:
 
     $ dotnet ef database update
 
