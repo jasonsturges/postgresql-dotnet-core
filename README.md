@@ -8,7 +8,7 @@ This project uses .NET Core 3.1 target framework, ASP.NET Core Web Application p
 
 ![vscode](http://labs.jasonsturges.com/coreclr/postgresql-dotnet-core.png)
 
-Project setup has already been completed in this repository - assure [environment setup](#environment-setup); then, jump to [Running the solution](#running-the-solution).
+Project setup has already been completed in this repository - assure [environment setup](#environment-setup); then, jump to [running the solution](#running-the-solution).
 
 
 ## Environment Setup
