@@ -4,9 +4,9 @@ Convert an ASP.NET Core Web Application project to use PostgreSQL with Entity Fr
 
 This enables development of ASP.NET Core projects using [VS Code](https://code.visualstudio.com/) on macOS or linux targets.
 
-This project uses .NET Core 3.1 target framework, ASP.NET Core Web Application project scaffold from Visual Studio 2019 (version 16.4.5).
+<img alt="Azure Pipelines" src="https://img.shields.io/badge/Visual%20Studio%20Code-Visual%20Studio%20Code?style=for-the-badge&logo=Visual%20Studio%20Code&logoColor=fff&color=007ACC"/>
 
-![vscode](http://labs.jasonsturges.com/coreclr/postgresql-dotnet-core.png)
+This project uses .NET Core 3.1 target framework, ASP.NET Core Web Application project scaffold from Visual Studio 2019 (version 16.4.5).
 
 Project setup has already been completed in this repository - assure [environment setup](#environment-setup); then, jump to [running the solution](#running-the-solution).
 
