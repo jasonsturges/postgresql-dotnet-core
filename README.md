@@ -6,7 +6,7 @@ This enables development of ASP.NET Core projects using [VS Code](https://code.v
 
 This project uses .NET Core 3.1 target framework, ASP.NET Core Web Application project scaffold from Visual Studio 2019 (version 16.4.5).
 
-![vscode](https://labs.jasonsturges.com/coreclr/postgresql-dotnet-core.png)
+![vscode](https://user-images.githubusercontent.com/1213591/106405913-4cb8fe80-63fd-11eb-8e35-d6a491c0f20b.png)
 
 Project setup has already been completed in this repository - assure [environment setup](#environment-setup); then, jump to [running the solution](#running-the-solution).
 
