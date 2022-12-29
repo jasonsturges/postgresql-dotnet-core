@@ -93,6 +93,8 @@ Or, from the command line via DotNet CLI:
 
     $ dotnet ef migrations add Initial
 
+If dotnet migration tools don't exist, remember to install the tools using the instruction above in the [environment setup](#environment-setup).
+
 
 ### Run Entity Framework Migrations
 
