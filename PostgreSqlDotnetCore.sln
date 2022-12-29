@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29806.167
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostgreSqlDotnetCore", "PostgreSqlDotnetCore\PostgreSqlDotnetCore.csproj", "{A1086371-6E0B-415B-854D-9AB607884342}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostgreSqlDotnetCore", "PostgreSqlDotnetCore\PostgreSqlDotnetCore.csproj", "{3D6D235F-22B4-49A5-8D4B-2B941CF86945}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A1086371-6E0B-415B-854D-9AB607884342}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A1086371-6E0B-415B-854D-9AB607884342}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A1086371-6E0B-415B-854D-9AB607884342}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A1086371-6E0B-415B-854D-9AB607884342}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D6D235F-22B4-49A5-8D4B-2B941CF86945}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D6D235F-22B4-49A5-8D4B-2B941CF86945}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D6D235F-22B4-49A5-8D4B-2B941CF86945}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D6D235F-22B4-49A5-8D4B-2B941CF86945}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {91529EFA-3904-4A3E-84EF-BAB6FDE28E4F}
+		SolutionGuid = {AFEE0CAD-3459-44DE-8A37-4503036EF94A}
 	EndGlobalSection
 EndGlobal
