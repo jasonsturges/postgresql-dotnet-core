@@ -1,4 +1,4 @@
-# PostgreSQL ASP.NET 7.0
+# PostgreSQL ASP.NET 7
 
 Convert an ASP.NET Core Web Application project to use PostgreSQL with Entity Framework.
 
