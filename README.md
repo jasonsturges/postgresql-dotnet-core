@@ -41,16 +41,20 @@ To do this, you can use the `dotnet` command line by executing:
 
 Or, edit the project's .csproj file and add the following line in the `PackageReference` item group:
 
-    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.1.2" />
+```xml
+<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.1.2" />
+```
 
 
 ### Update appsettings.json
 
 Configure connection string in project's appsettings.json, replacing the `username`, `password`, and `dbname` appropriately:
 
-    "ConnectionStrings": {
-        "DefaultConnection": "User ID=username;Password=password;Server=localhost;Port=5432;Database=dbname;Integrated Security=true;Pooling=true;"
-    },
+```json
+"ConnectionStrings": {
+    "DefaultConnection": "User ID=username;Password=password;Server=localhost;Port=5432;Database=dbname;Integrated Security=true;Pooling=true;"
+},
+```
 
 
 ### Modify Program.cs
