@@ -118,14 +118,14 @@ Use [brew](https://brew.sh/) to install PostgreSQL, then launch the service:
 
 ### Create a user
 
-Create a user using the `createuser` command from a terminal.  Using the `-P` argument, you will be prompted to setup a password.
+Create a user using the `createuser` command from a terminal, where `username` is your desired new user name.  Using the `-P` argument, you will be prompted to setup a password.
 
     $ createuser username -P
 
 
 ### Create a database
 
-Create your database using the `createdb` command from a terminal.
+Create your database using the `createdb` command from a terminal, where `dbname` is your desired new database name.
 
     $ createdb dbname
     
@@ -154,3 +154,11 @@ From the PostgreSQL interface terminal, List tables using the `\dt` command:
      public | AspNetUsers           | table | username
      public | __EFMigrationsHistory | table | username
     (8 rows)
+
+
+### Database permissions issues
+
+If permissions were not setup properly during the creation of the database, retroactively fix by granting privileges where `dbname` is your database name and `username` is the user you created:
+
+    $ psql dbname
+    dbname=# GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO username;
