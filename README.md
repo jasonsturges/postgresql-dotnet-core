@@ -1,10 +1,10 @@
-# PostgreSQL ASP.NET Core 3.1
+# PostgreSQL ASP.NET 7.0
 
 Convert an ASP.NET Core Web Application project to use PostgreSQL with Entity Framework.
 
 This enables development of ASP.NET Core projects using [VS Code](https://code.visualstudio.com/) on macOS or linux targets.
 
-This project uses .NET Core 3.1 target framework, ASP.NET Core Web Application project scaffold from Visual Studio 2019 (version 16.4.5).
+This project uses [.NET 7.0](https://dotnet.microsoft.com/en-us/download/dotnet/7.0) target framework, ASP.NET Core Web Application MVC project scaffold from Visual Studio 2022 (version 17.4).
 
 ![vscode](https://user-images.githubusercontent.com/1213591/106405913-4cb8fe80-63fd-11eb-8e35-d6a491c0f20b.png)
 
@@ -53,15 +53,14 @@ Configure connection string in project's appsettings.json, replacing the `userna
     },
 
 
-### Modify Startup.cs
+### Modify Program.cs
 
-Inside Startup.cs `ConfigureServices()` method, replace the `UseSqlServer` option with PostgresSQL:
+Inside Program.cs replace the `UseSqlServer` options with `UseNpgsql`:
 
-    public void ConfigureServices(IServiceCollection services)
-    {
-        // Add framework services.
-        services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
+```cs
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseNpgsql(connectionString));
+```
     
 
 ## Running the solution
@@ -74,7 +73,10 @@ Before the solution can be executed, be sure to run entity framework migrations.
 Initial migrations may fail, due to ASP.NET Core template come with a pre-generation migration for SQL Server.
 
 When trying to run the migration, you might see errors such as:
+> Npgsql.PostgresException (0x80004005): 42704: type "nvarchar" does not exist
+>
 > System.NullReferenceException: Object reference not set to an instance of an object.
+>
 > System.InvalidOperationException: No mapping to a relational type can be found for property 'Microsoft.AspNetCore.Identity.IdentityUser.TwoFactorEnabled' with the CLR type 'bool'.
 
 Delete the entire Migrations folder, and regenerate new inital migrations.
